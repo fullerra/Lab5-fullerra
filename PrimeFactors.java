@@ -6,9 +6,11 @@ public class PrimeFactors {
 	public static ArrayList<Integer> generateFactors(int i) {
 		ArrayList<Integer> ret = new ArrayList<Integer>();
 		
-		while (i % 2 == 0) {
-			ret.add(2);
-			i /= 2;
+		for (int candidate = 2; i > 1; candidate++) {
+			while (i % candidate == 0) {
+				ret.add(candidate);
+				i /= candidate;
+			}
 		}
 		
 		if (i > 1) {
