@@ -12,10 +12,6 @@ public class PrimeFactors {
 				i /= candidate;
 			}
 		}
-		
-		if (i > 1) {
-			ret.add(i);
-		}
 		return ret;
 	}
 
