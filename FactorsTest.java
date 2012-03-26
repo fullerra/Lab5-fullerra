@@ -14,6 +14,19 @@ public class FactorsTest {
 
 	@Test
 	public void testOne() {
-		assertEquals(new ArrayList<Integer>(), Factors.generateFactors(1));
+		assertEquals(list(), Factors.generateFactors(1));
+	}
+	
+	@Test
+	public void testTwo() {
+		assertEquals(list(2), Factors.generateFactors(2));
+	}
+	
+	private ArrayList<Integer> list(int... inta) {
+		ArrayList<Integer> ret = new ArrayList<Integer>();
+		for (int i : inta) {
+			ret.add(i);
+		}
+		return ret;
 	}
 }
