@@ -37,6 +37,11 @@ public class FactorsTest {
 		assertEquals(list(2, 3), Factors.generateFactors(6));
 	}
 	
+	@Test
+	public void testEight() {
+		assertEquals(list(2, 2, 2), Factors.generateFactors(8));
+	}
+	
 	private ArrayList<Integer> list(int... inta) {
 		ArrayList<Integer> ret = new ArrayList<Integer>();
 		for (int i : inta) {
