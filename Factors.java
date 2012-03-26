@@ -7,7 +7,7 @@ public class Factors {
 		ArrayList<Integer> ret = new ArrayList<Integer>();
 		
 		if (i > 1) {
-			ret.add(2);
+			ret.add(i);
 		}
 		return ret;
 	}
