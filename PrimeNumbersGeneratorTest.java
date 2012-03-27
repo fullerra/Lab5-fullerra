@@ -23,10 +23,10 @@ public class PrimeNumbersGeneratorTest {
 		assertEquals(list(), PrimeNumbersGenerator.generatePrimeNumbers(2));
 	}
 	
-//	@Test
-//	public void testThree() {
-//		assertEquals(list(2), PrimeNumbersGenerator.generatePrimeNumbers(3));
-//	}
+	@Test
+	public void testThree() {
+		assertEquals(list(2), PrimeNumbersGenerator.generatePrimeNumbers(3));
+	}
 //	
 //	@Test
 //	public void testFour() {
