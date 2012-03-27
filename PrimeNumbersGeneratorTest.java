@@ -18,6 +18,11 @@ public class PrimeNumbersGeneratorTest {
 		assertEquals(list(), PrimeNumbersGenerator.generatePrimeNumbers(1));
 	}
 	
+	@Test
+	public void testTwo() {
+		assertEquals(list(2), PrimeNumbersGenerator.generatePrimeNumbers(2));
+	}
+	
 	private ArrayList<Integer> list(int... inta) {
 		ArrayList<Integer> ret = new ArrayList<Integer>();
 		for (int i : inta) {
