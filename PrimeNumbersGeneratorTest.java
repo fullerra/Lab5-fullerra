@@ -28,6 +28,11 @@ public class PrimeNumbersGeneratorTest {
 		assertEquals(list(3), PrimeNumbersGenerator.generatePrimeNumbers(3));
 	}
 	
+	@Test
+	public void testFour() {
+		assertEquals(list(2,2), PrimeNumbersGenerator.generatePrimeNumbers(4));
+	}
+	
 	private ArrayList<Integer> list(int... inta) {
 		ArrayList<Integer> ret = new ArrayList<Integer>();
 		for (int i : inta) {
