@@ -5,7 +5,11 @@ import java.util.ArrayList;
 public class PrimeNumbersGenerator {
 
 	public static ArrayList<Integer> generatePrimeNumbers(int i) {
-		return new ArrayList<Integer>();
+		ArrayList<Integer> ret = new ArrayList<Integer>();
+		if (i > 1) {
+			ret.add(i);
+		}
+		return ret;
 	}
 
 }
